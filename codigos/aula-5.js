@@ -48,7 +48,7 @@ function encontrarComIdIn(arrayIds) {
   });
 }
 
-function encontrarComOffsetLimit(arrayIds) {
+function encontrarComOffsetLimit() {
   // SELECT * FROM pessoas LIMIT 10 OFFSET 990
   Pessoa.findAll({
     //Offset: vai trazer a partir de um numero. 991 pra frente no exemplo abaixo
@@ -81,7 +81,7 @@ function encontrarComLike() {
   });
 }
 
-function encontrarutilizandoOperadores() {
+function encontrarUtilizandoOperadores() {
   // SELECT * FROM pessoas WHERE id <= 5 OR sobrenome = "Harpham"
   // Combinação de operadores. Vai procurar onde o id seja menor ou igual que 5 OU tenha o sobrenome Harpham
 
