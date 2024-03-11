@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Pessoa.hasOne(models.Endereco, { foreingKey: 'pessoaId' });
+      Pessoa.hasMany(models.Telefone, { foreingKey: 'pessoaId' });
     }
   }
   Pessoa.init(
